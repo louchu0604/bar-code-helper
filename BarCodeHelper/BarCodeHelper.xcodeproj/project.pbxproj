@@ -15,6 +15,8 @@
 		C3DCED9E1F00A18300F8DC33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DCED9C1F00A18300F8DC33 /* LaunchScreen.storyboard */; };
 		C3DCEDA91F00A18300F8DC33 /* BarCodeHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DCEDA81F00A18300F8DC33 /* BarCodeHelperTests.m */; };
 		C3DCEDB41F00A18300F8DC33 /* BarCodeHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DCEDB31F00A18300F8DC33 /* BarCodeHelperUITests.m */; };
+		C3DCEDC31F00A41A00F8DC33 /* CYScanHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DCEDC21F00A41A00F8DC33 /* CYScanHelper.m */; };
+		C3DCEDC61F00B08100F8DC33 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DCEDC51F00B08100F8DC33 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		C3DCEDAF1F00A18300F8DC33 /* BarCodeHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarCodeHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3DCEDB31F00A18300F8DC33 /* BarCodeHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarCodeHelperUITests.m; sourceTree = "<group>"; };
 		C3DCEDB51F00A18300F8DC33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DCEDC11F00A41A00F8DC33 /* CYScanHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYScanHelper.h; sourceTree = "<group>"; };
+		C3DCEDC21F00A41A00F8DC33 /* CYScanHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYScanHelper.m; sourceTree = "<group>"; };
+		C3DCEDC51F00B08100F8DC33 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DCEDC61F00B08100F8DC33 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				C3DCEDA71F00A18300F8DC33 /* BarCodeHelperTests */,
 				C3DCEDB21F00A18300F8DC33 /* BarCodeHelperUITests */,
 				C3DCED8C1F00A18300F8DC33 /* Products */,
+				C3DCEDC41F00B08100F8DC33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,8 @@
 				C3DCED921F00A18300F8DC33 /* AppDelegate.m */,
 				C3DCED941F00A18300F8DC33 /* ViewController.h */,
 				C3DCED951F00A18300F8DC33 /* ViewController.m */,
+				C3DCEDC11F00A41A00F8DC33 /* CYScanHelper.h */,
+				C3DCEDC21F00A41A00F8DC33 /* CYScanHelper.m */,
 				C3DCED971F00A18300F8DC33 /* Main.storyboard */,
 				C3DCED9A1F00A18300F8DC33 /* Assets.xcassets */,
 				C3DCED9C1F00A18300F8DC33 /* LaunchScreen.storyboard */,
@@ -138,6 +147,14 @@
 				C3DCEDB51F00A18300F8DC33 /* Info.plist */,
 			);
 			path = BarCodeHelperUITests;
+			sourceTree = "<group>";
+		};
+		C3DCEDC41F00B08100F8DC33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3DCEDC51F00B08100F8DC33 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +295,7 @@
 			files = (
 				C3DCED961F00A18300F8DC33 /* ViewController.m in Sources */,
 				C3DCED931F00A18300F8DC33 /* AppDelegate.m in Sources */,
+				C3DCEDC31F00A41A00F8DC33 /* CYScanHelper.m in Sources */,
 				C3DCED901F00A18300F8DC33 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P3922CJGWW;
 				INFOPLIST_FILE = BarCodeHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.somnic.demo.scene.BarCodeHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P3922CJGWW;
 				INFOPLIST_FILE = BarCodeHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.somnic.demo.scene.BarCodeHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
